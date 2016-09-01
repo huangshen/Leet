@@ -1,4 +1,5 @@
 *.log
 *.sdf
+*.o
 Debug/
 ipch/

@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <gtest/gtest.h>
+#include <vector>
+#include <iostream>
+
+using namespace std;
 
 TEST(aaa,bbb)
 {
     ASSERT_EQ(1,2);
 }
+
 
 int main(int argc, char* argv[])
 {

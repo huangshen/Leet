@@ -1,0 +1,42 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultDir=E:\git\Leet
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+Extensions=*.h;*.cpp
+[Project tree]
+Leet
+	+test
+		..\test\SumOfTwoIntegers_unittest.cpp
+		..\test\main.cpp
+	+include
+		..\include\SumOfTwoIntegers.h
+	+src
+		..\src\SumOfTwoIntegers.cpp
+[Open project files]
+0=..\test\main.cpp
+1=..\test\SumOfTwoIntegers_unittest.cpp
+2=..\src\SumOfTwoIntegers.cpp
+3=..\include\SumOfTwoIntegers.h
+[Selected Project Files]
+Main=
+Selected=..\test\main.cpp
+[..\test\main.cpp]
+TopLine=1
+Caret=52,6
+[..\test\SumOfTwoIntegers_unittest.cpp]
+TopLine=1
+Caret=1,1
+[..\src\SumOfTwoIntegers.cpp]
+TopLine=1
+Caret=1,1
+[..\include\SumOfTwoIntegers.h]
+TopLine=1
+Caret=1,1
