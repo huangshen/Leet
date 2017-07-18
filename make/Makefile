@@ -70,9 +70,11 @@ gtest_main.a : gtest-all.o gtest_main.o
 # Builds a sample test.  A test should link with either gtest.a or
 # gtest_main.a, depending on whether it defines its own main()
 # function.
-CPP_OBJS  = SumOfTwoIntegers.o
+CPP_OBJS  = SumOfTwoIntegers.o \
+            AddTwoNumbers.o
 
 TEST_OBJS = SumOfTwoIntegers_unittest.o \
+            AddTwoNumbers_test.o \
             vector_test.o 
 
 $(CPP_OBJS): %.o: $(USER_DIR)/src/%.cpp
@@ -81,5 +83,5 @@ $(CPP_OBJS): %.o: $(USER_DIR)/src/%.cpp
 $(TEST_OBJS): %.o: $(USER_DIR)/test/%.cpp
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $<
 
-$(TESTS) : SumOfTwoIntegers.o $(TEST_OBJS) gtest_main.a
+$(TESTS) : $(CPP_OBJS) $(TEST_OBJS) gtest_main.a
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -lpthread $^ -o $@

@@ -10,33 +10,39 @@ DontOpen=0
 AbsolutePath=0
 FileFormat=0
 ProjectFilesOnly=0
-Extensions=*.h;*.cpp
 [Project tree]
 Leet
+	+make
+		..\make\Makefile
 	+test
 		..\test\SumOfTwoIntegers_unittest.cpp
 		..\test\main.cpp
+		..\test\vector_test.cpp
+		..\test\AddTwoNumbers_test.cpp
 	+include
 		..\include\SumOfTwoIntegers.h
+		..\include\AddTwoNumbers.h
 	+src
 		..\src\SumOfTwoIntegers.cpp
+		..\src\AddTwoNumbers.cpp
 [Open project files]
-0=..\test\main.cpp
-1=..\test\SumOfTwoIntegers_unittest.cpp
-2=..\src\SumOfTwoIntegers.cpp
-3=..\include\SumOfTwoIntegers.h
+0=X:\cast_tv\vendor\marvell-sdk\ampsdk\amp\src\hal\zsp\host\Main\DebugG3\ZspCore.map
+1=D:\Temp\UDC_rename\lib-vsi\rename.config
+2=X:\cast_tv\vendor\marvell-sdk\ampsdk\amp\src\hal\zsp\host\LinkScripts\udc_link_cmd.lds
+3=C:\Users\shenh\Desktop\map.txt
 [Selected Project Files]
 Main=
-Selected=..\test\main.cpp
-[..\test\main.cpp]
+Selected=C:\Users\shenh\Desktop\map.txt
+[X:\cast_tv\vendor\marvell-sdk\ampsdk\amp\src\hal\zsp\host\Main\DebugG3\ZspCore.map]
+TopLine=6182
+Caret=1,6186
+Mark1=12,7054
+[D:\Temp\UDC_rename\lib-vsi\rename.config]
 TopLine=1
-Caret=52,6
-[..\test\SumOfTwoIntegers_unittest.cpp]
+Caret=21,13
+[X:\cast_tv\vendor\marvell-sdk\ampsdk\amp\src\hal\zsp\host\LinkScripts\udc_link_cmd.lds]
+TopLine=121
+Caret=21,150
+[C:\Users\shenh\Desktop\map.txt]
 TopLine=1
-Caret=1,1
-[..\src\SumOfTwoIntegers.cpp]
-TopLine=1
-Caret=1,1
-[..\include\SumOfTwoIntegers.h]
-TopLine=1
-Caret=1,1
+Caret=23,13
