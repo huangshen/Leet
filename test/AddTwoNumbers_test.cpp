@@ -26,6 +26,8 @@ void print_List(ListNode *l) {
 TEST(AddTwoNumbers, 1)
 {
     ListNode *l1, *l2, *tmp;
+    ListNode *sum;
+    class AddTwoNumbers solution;
     
     l1 = new ListNode(3);
     
@@ -47,6 +49,9 @@ TEST(AddTwoNumbers, 1)
     tmp->next = l2;
     l2 = tmp;
     
+    sum = solution.addTwoNumbers(l1, l2);
+
     print_List(l1);
     print_List(l2);
+    print_List(sum);
 }
