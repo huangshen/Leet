@@ -71,10 +71,12 @@ gtest_main.a : gtest-all.o gtest_main.o
 # gtest_main.a, depending on whether it defines its own main()
 # function.
 CPP_OBJS  = SumOfTwoIntegers.o \
-            AddTwoNumbers.o
+            AddTwoNumbers.o \
+            Median.o
 
 TEST_OBJS = SumOfTwoIntegers_unittest.o \
             AddTwoNumbers_test.o \
+            Median_test.o \
             vector_test.o 
 
 $(CPP_OBJS): %.o: $(USER_DIR)/src/%.cpp
