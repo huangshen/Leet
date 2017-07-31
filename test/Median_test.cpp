@@ -18,7 +18,6 @@ TEST(Median, 1) {
 	vector<int> vec2;
 
 	cout << "Testing Median Case1" << endl;
-
 	vec1.push_back(1);
 	vec1.push_back(2);
 
@@ -90,3 +89,4 @@ TEST(Median, 4) {
 	EXPECT_EQ(4.0, solution.findMedianSortedArrays(vec1, vec2));
 
 }
+
