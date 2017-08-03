@@ -90,3 +90,23 @@ TEST(Median, 4) {
 
 }
 
+TEST(Median, 5) {
+	int i;
+	class Median solution;
+	vector<int> vec1;
+	vector<int> vec2;
+
+	cout << "Testing Median Case2" << endl;
+
+	vec1.push_back(1);
+	vec1.push_back(3);
+	vec1.push_back(5);
+
+	vec2.push_back(2);
+	vec2.push_back(4);
+	vec2.push_back(6);
+	vec2.push_back(8);
+
+	EXPECT_EQ(4.0, solution.findMedianSortedArrays(vec1, vec2));
+
+}

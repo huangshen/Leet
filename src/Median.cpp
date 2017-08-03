@@ -16,13 +16,13 @@ double Median::findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
 	n = nums1.size();
 	m = nums2.size();
 
+	/* making sure that nums1 is always smaller than nums2 */
 	if(n > m) {
 		nTmp = n;
 		n = m;
 		m = nTmp;
 
 		nums1.swap(nums2);
-
 	}
 
 	cout << n << ", " << m << endl;
@@ -42,11 +42,10 @@ double Median::findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
 		}
 
 		for(i = 0; i < n; i++) {
-			j = (n+m)/2-1;
+			j = (n+m)/2 - i - 2;
 			if(nums1[i] <= nums2[j+1] && nums2[j] <= nums1[i+1]) {
-				a = nums1[i] > nums2[j] ? nums1[i] : nums2[j];
 				b = nums1[i+1] < nums2[j+1] ? nums1[i+1] : nums2[j+1];
-				ret = (a+b)/2.0;
+				ret = (double)b;
 				return ret;
 			}
 		}
